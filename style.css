@@ -39,11 +39,46 @@ body {
     font-family: "Roboto", "Raleway", sans-serif;
 }
 
-/*  */
-
 
 /*  */
 
+
+/*  */
+
+#trainer-info{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.img-fluid{
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    .img-fluid {
+            max-width: 300px;
+    }
+}
+
+.list-t{
+ margin-bottom: 20px;
+}
+
+.h-cont{
+    margin-top: 20px;
+}
+
+.name-t{
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+.row a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
 .navbar-brand{
     display: flex;
     align-items: center;
