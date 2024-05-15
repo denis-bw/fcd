@@ -1,0 +1,305 @@
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    background-color: #3E3E3E;
+    font-family: "Roboto", "Raleway", sans-serif;
+}
+
+/*  */
+
+
+/*  */
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer {
+
+    bottom: 0;
+    width: 100%;
+}
+
+ .navbar-brand p {
+     margin-bottom: 0;
+     margin-left: 5px;
+     font-weight: bold;
+ }
+.jumbotron {
+    background-image: url('./assets/images/imageBG.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.jumbotron-history{
+        background-image: url('./assets/images/BG2.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+}
+
+.jumbotron-history .display-4{
+    color: #2FFF43;
+}
+
+.jumbotron p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 {
+    color: #2FFF43;
+}
+
+.text-container{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.text-h{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.card{
+ background: #121212;
+ border: 4px;
+}
+
+.card-img-top-a{
+    border: 0;
+}
+
+#abonements{
+    margin-top: 60px;
+}
+
+.card-main{
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 270px;
+}
+
+.card-img-top{
+    height: 110px;
+    width: 110px;
+}
+
+.card-title{
+    color: #fff;
+}
+
+.card-text {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: #2FFF43;
+    color: #121212;
+    border: 0;
+}
+
+#map {
+    height: 400px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h-location{
+    color: #fff;
+    margin-bottom: 50px;
+}
+.text-location{
+    color: #fff;
+    margin-top: 30px;
+    max-width: 700px;
+}
+.h-contacts{
+    color: #2FFF43;
+}
+
+.log-container{
+    margin-top: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #2FFF43;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.carousel-control-prev-icon::before {
+    border-width: 10px 15px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.carousel-control-next-icon::before {
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent white;
+}
+
+.team-member img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.h-team{
+    margin-bottom: 40px;
+    color: white;
+}
+
+.mt-3{
+    color: #2FFF43;
+}
+
+.section-team{
+    margin-bottom: 70px;
+}
+
+  .footer {
+      background-color: #121212;
+      color: #fff;
+      padding: 40px 0;
+  }
+
+  .footer a {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .footer a:hover {
+      text-decoration: underline;
+  }
+
+  .footer-logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .footer-logo img {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+  }
+
+  .footer .social-icons {
+      display: flex;
+      gap: 10px;
+  }
+
+  .footer .social-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+  }
+
+@media (max-width: 768px) {
+    .jumbotron p {
+        font-size: 14px;
+    }
+    .text-container {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .jumbotron {
+        padding: 60px 0;
+    }
+}

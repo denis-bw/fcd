@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <title>FC Dumbbell</title>
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/Group 1.png" alt="Логотип" width="40px">
+                <p>FC Dumbbell</p>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Обладнання та Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#section-team">Тренера</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboniments.html">Абонементи</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+<section id="abonements">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="./assets/images/Rectangle 53.jpg" class="card-img-top-a" alt="Абонемент 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Абонемент 1</h5>
+                        <p class="card-text">Необмежений доступ до тренажерного залу та кардіо-зони.
+                        Підтримка від тренера на приймальні.</p>
+                        <p class="card-text">Ціна: $50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="./assets/images/Rectangle 53.jpg" class="card-img-top-a" alt="Абонемент 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Абонемент 2</h5>
+                        <p class="card-text">Необмежений доступ до тренажерного залу та кардіо-зони.
+                        Підтримка від тренера на приймальні.</p>
+                        <p class="card-text">Ціна: $60</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="./assets/images/Rectangle 53.jpg" class="card-img-top-a" alt="Абонемент 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Абонемент 3</h5>
+                        <p class="card-text">Необмежений доступ до тренажерного залу та кардіо-зони.
+                        Підтримка від тренера на приймальні.</p>
+                        <p class="card-text">Ціна: $70</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="./assets/images/Rectangle 53.jpg" class="card-img-top-a" alt="Абонемент 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Абонемент 4</h5>
+                        <p class="card-text">Необмежений доступ до тренажерного залу та кардіо-зони.
+                        Підтримка від тренера на приймальні.</p>
+                        <p class="card-text">Ціна: $80</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <h5 class="h-contacts">Контактна інформація:</h5>
+                    <p>Адреса: вул. Спортивна, 10, м. Літмісто</p>
+                    <p>Телефон: <a href="tel:+380123456789">+380123456789</a></p>
+                    <p>Електронна пошта: <a href="mailto:info@fitclub.com">info@fitclub.com</a></p>
+                    <p>Соціальні мережі: <a href="#">facebook</a> <a href="#">facebook</a></p>
+    
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <h5 class="h-contacts">Графік роботи:</h5>
+                    <p>Понеділок-п'ятниця: 7:00 - 22:00</p>
+                    <p>Субота-неділя: 8:00 - 20:00</p>
+                </div>
+                <div class="log-container col-md-4 col-xs-12">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/images/Group 1.png" alt="Логотип" width="40px">
+                        <p>FC Dumbbell</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+      
+            $('.navbar-toggler').on('click', function () {
+                $(this).toggleClass('collapsed');
+                $('.navbar-collapse').toggleClass('show');
+            });
+
+            $(document).on('click', function (event) {
+                var $target = $(event.target); 
+              
+                if (!$target.closest('.navbar-collapse').length && !$target.closest('.navbar-toggler').length) {
+                    
+                    $('.navbar-collapse').removeClass('show');
+                    $('.navbar-toggler').addClass('collapsed');
+                }
+            });
+        });
+
+    </script>
+    <script src="./script.js"></script>
+    </body>
+    
+    </html>

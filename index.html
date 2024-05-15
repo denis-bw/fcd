@@ -3,11 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-
-    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <title>FC Dumbbell</title>
 </head>
 <body>
-    <p>Hola!</p>
+    
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+       
+        <a class="navbar-brand" href="#">
+            <img src="./assets/images/Group 1.png" alt="Логотип" width="40px">
+            <p>FC Dumbbell</p>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Обладнання та Галерея</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-team">Тренера</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboniments.html">Абонементи</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Ми - ідеальне місце для досягнення ваших фітнес-цілей.</h1>
+            <div class="text-container">
+            <p class="lead">У нас - професійні тренери, різноманітні програми, сучасне обладнання і зручне розташування.
+                Приєднуйтеся до нашої спільноти для підтримки і стимулу до найкращих результатів у вашому фітнес-шляху.</p>
+            </div>
+        </div>
+    </div>
+
+<section class="services my-4">
+    <div class="container">
+        <h2 class="text-center text-h ">Послуги при купівлі карти фітнес клубу</h2>
+        <div class="row justify-content-between">
+            <div class="col-md-4 mb-4 ">
+                <div class="card card-main">
+                    <img src="./assets/images/1.png" class="card-img-top" alt="..." >
+                    <div class="card-body text-center">
+                        
+                        <p class="card-text">Силові та аеробні тренування</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-main">
+                    <img src="./assets/images/2.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                       
+                        <p class="card-text">4 індивідуальні дуальні тренування з інструктором</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-main">
+                    <img src="./assets/images/3.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        
+                        <p class="card-text">Уроки танців, Mind&body</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-main">
+                    <img src="./assets/images/4.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                       
+                        <p class="card-text">Комплект рушників під час кожного відвідування</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-main">
+                    <img src="./assets/images/5.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                       
+                        <p class="card-text">Хамам, фінська сауна</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-main">
+                    <img src="./assets/images/6.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        
+                        <p class="card-text">Бокс, самооборона</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Додайте ще картки за потребою -->
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row my-5">
+        <div class="col text-center">
+            <h2 class="h-location">Де ми?</h2>
+            <div id="map"></div>
+            <p class="text-location">Ми розташовані в самому серці міста, за адресою вул. Спортивна, 10. Наш клуб знаходиться у престижному районі з
+            відмінним доступом до громадського транспорту та паркуванням для автомобілів.</p>
+        </div>
+    </div>
+</section>
+
+<div class="jumbotron-history">
+    <div class="container">
+        <h1 class="display-4">Історія фітнес клубу</h1>
+        <div class="text-container">
+            <p class="lead">Наш фітнес-клуб був заснований у 2005 році групою ентузіастів фітнесу з метою створення середовища, що надає підтримку
+            та надихає до досягнення здорового способу життя. Протягом років ми постійно розвивалися та вдосконалювали наші послуги,
+            щоб забезпечити нашим клієнтам найкращий досвід фітнесу.
+            </p>
+        </div>
+    </div>
+</div>
+
+<section class="section-team" id="section-team">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="h-team">Наша команда</h2>
+            </div>
+        </div>
+        <div id="teamCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="row">
+                        <div class="col-md-4 team-member">
+                            <img class="tr-img" src="./assets/images/tr.png" alt="Тренер 1">
+                            <h5 class="mt-3">Поліна Осколкова</h5>
+                        </div>
+                        <div class="col-md-4 team-member">
+                            <img class="tr-img" src="./assets/images/tr.png" alt="Тренер 2">
+                            <h5 class="mt-3">Поліна Осколкова</h5>
+                        </div>
+                        <div class="col-md-4 team-member">
+                            <img class="tr-img" src="./assets/images/tr.png" alt="Тренер 3">
+                            <h5 class="mt-3">Поліна Осколкова</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 team-member">
+                            <img class="tr-img" src="./assets/images/tr.png" alt="Тренер 4">
+                            <h5 class="mt-3">Поліна Осколкова</h5>
+                        </div>
+                        <div class="col-md-4 team-member">
+                            <img class="tr-img" src="./assets/images/tr.png" alt="Тренер 5">
+                            <h5 class="mt-3">Поліна Осколкова</h5>
+                        </div>
+                        <div class="col-md-4 team-member">
+                            <img class="tr-img" src="./assets/images/tr.png" alt="Тренер 6">
+                            <h5 class="mt-3">Поліна Осколкова</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#teamCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                
+            </a>
+            <a class="carousel-control-next" href="#teamCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                
+            </a>
+            
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <h5 class="h-contacts">Контактна інформація:</h5>
+                <p>Адреса: вул. Спортивна, 10, м. Літмісто</p>
+                <p>Телефон: <a href="tel:+380123456789">+380123456789</a></p>
+                <p>Електронна пошта: <a href="mailto:info@fitclub.com">info@fitclub.com</a></p>
+                <p>Соціальні мережі: <a href="#">facebook</a> <a href="#">facebook</a></p>
+                
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <h5 class="h-contacts">Графік роботи:</h5>
+                <p>Понеділок-п'ятниця: 7:00 - 22:00</p>
+                <p>Субота-неділя: 8:00 - 20:00</p>
+            </div>
+            <div class="log-container col-md-4 col-xs-12">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/Group 1.png" alt="Логотип" width="40px">
+                    <p>FC Dumbbell</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+                
+       
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+          $(document).ready(function () {
+                // Обробник подій для кліку на кнопку бургера
+                $('.navbar-toggler').on('click', function () {
+                    $(this).toggleClass('collapsed'); // Додає або видаляє клас 'collapsed' для кнопки бургера
+                    $('.navbar-collapse').toggleClass('show'); // Додає або видаляє клас 'show' для навігаційного меню
+                });
+
+                // Обробник подій для кліку на інші елементи документу
+                $(document).on('click', function (event) {
+                    var $target = $(event.target); // Отримуємо елемент, на який було здійснено клік
+                    // Перевіряємо, чи клікнуто поза меню і поза кнопкою бургера
+                    if (!$target.closest('.navbar-collapse').length && !$target.closest('.navbar-toggler').length) {
+                        // Закриваємо меню, якщо клікнуто поза ним
+                        $('.navbar-collapse').removeClass('show');
+                        $('.navbar-toggler').addClass('collapsed');
+                    }
+                });
+            });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var map = L.map('map').setView([50.4501, 30.5234], 10); // Координати Києва
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            L.marker([50.4501, 30.5234]).addTo(map)
+                .bindPopup('Ми тут.')
+                .openPopup();
+        });
+    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
