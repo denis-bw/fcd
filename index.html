@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Додайте ще картки за потребою -->
+
         </div>
     </div>
 </section>
@@ -250,36 +250,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-          $(document).ready(function () {
-                // Обробник подій для кліку на кнопку бургера
-                $('.navbar-toggler').on('click', function () {
-                    $(this).toggleClass('collapsed'); // Додає або видаляє клас 'collapsed' для кнопки бургера
-                    $('.navbar-collapse').toggleClass('show'); // Додає або видаляє клас 'show' для навігаційного меню
-                });
-
-                // Обробник подій для кліку на інші елементи документу
-                $(document).on('click', function (event) {
-                    var $target = $(event.target); // Отримуємо елемент, на який було здійснено клік
-                    // Перевіряємо, чи клікнуто поза меню і поза кнопкою бургера
-                    if (!$target.closest('.navbar-collapse').length && !$target.closest('.navbar-toggler').length) {
-                        // Закриваємо меню, якщо клікнуто поза ним
-                        $('.navbar-collapse').removeClass('show');
-                        $('.navbar-toggler').addClass('collapsed');
-                    }
-                });
-            });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var map = L.map('map').setView([50.4501, 30.5234], 10); // Координати Києва
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-            L.marker([50.4501, 30.5234]).addTo(map)
-                .bindPopup('Ми тут.')
-                .openPopup();
-        });
-    </script>
+ 
     <script src="./script.js"></script>
 </body>
 </html>
